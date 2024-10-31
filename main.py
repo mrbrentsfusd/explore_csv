@@ -124,12 +124,12 @@ pprint(data)  # prints our data in a more human-readable format
 '''
 Run the program, noticing that the data that is read in matches the data in your materials.csv file. Then, come back here to continue.
 
-STEP 3: Writing data with the csv module
-========================================
+STEP 3: Adding data to the list's dictionary items
+==================================================
 
 Welcome back!
 
-So now we have loaded the data, but how do we add to it and finally store it so we can use it later? First, we need to get some new data. Uncomment the line below and then read through this code. 
+So now we have loaded the data into a dictionary, but how do we add to it and finally store it so we can use it later? First, we need to get some new data. Uncomment the line below and then read through this code. 
 '''
 # ok_next_step = True
 if ok_next_step:
@@ -154,13 +154,14 @@ if ok_next_step:
 '''
 Run the program and come back here.
 
-Welcome back! The data you just added won't show up the next time you run the program. Bummer! To save that data we need to write it to a file. Since we have a full copy of the data that was in the csv file, we will write all the data back to the csv file. 
+STEP 4: Writing data using the csv module
+=========================================
 
-First, let's make a backup of our csv file, just in case we make a mistake. Hover your mouse over 'materials.csv' in the Files Sidebar and click the 3 dots icon on the right, then click 'Duplicate file'. A copy of your csv file will be made. This is our backup.
+Welcome back! The data you just added won't show up the next time you run the program. Bummer! To save that data we need to write it to a file. Since we have a full copy of the data that was in the csv file, we will write all the data back to the csv file. 
 
 Uncomment the next line, then read through this code.
 '''
-ok_final_step = True
+# ok_final_step = True
 
 if ok_final_step:
     with open("materials.csv", mode="w") as file_writer:
